@@ -4,13 +4,19 @@
   "description": "A portfolio for the art starter business SB Illustrates",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node src/app.js",
+    "dev": "nodemon src/app.js -e hbs,js",
+    "watch": "sass --watch pub/scss/main.scss:pub/css/style.css"
   },
   "author": "Ryan Dawkes",
   "license": "ISC",
   "dependencies": {
+    "bootstrap": "^4.6.0",
     "express": "^4.17.1",
     "hbs": "^4.1.1",
+    "jquery": "^3.6.0",
+    "jsdom": "^16.5.1",
+    "node-sass": "^5.0.0",
     "request": "^2.88.2"
   }
 }
