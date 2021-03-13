@@ -1,0 +1,16 @@
+{
+  "name": "sb_illustrates",
+  "version": "1.0.0",
+  "description": "A portfolio for the art starter business SB Illustrates",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ryan Dawkes",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "hbs": "^4.1.1",
+    "request": "^2.88.2"
+  }
+}
