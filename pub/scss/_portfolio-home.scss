@@ -1,0 +1,27 @@
+#portfolio-home {
+  background: $salmon;
+  height: fit-content;
+
+  .description_container {
+    h1 {
+      text-transform: uppercase;
+      letter-spacing: 0.3rem;
+    }
+  }
+
+  .image_container {
+    .image_box {
+      height: 500px;
+      background: green;
+    }
+  }
+
+  @include media-breakpoint-up(sm) {
+  }
+  @include media-breakpoint-up(md) {
+  }
+  @include media-breakpoint-up(lg) {
+  }
+  @include media-breakpoint-up(xl) {
+  }
+}
