@@ -1,22 +1,48 @@
+{{!-- Portfolio --}}
 <div id="portfolio-home" class="section_container w-100 d-flex align-items-center">
-  <div class="container d-flex">
+  <div class="d-flex w-100 px-100 portfolio_container">
 
     {{! Description }}
-    <div class="col-5 pr-5 d-flex justify-content-center flex-column description_container">
-        <h1>Portfolio</h1>
-        <p>Over the years, I have completed various forms of work. Select a category on the right to see some of them.</p>
+    <div class="col-12 col-md-4 d-flex justify-content-center flex-column description_container">
+        <h1 class="p-2">Portfolio</h1>
+        <p class="p-2">Over the years, I have completed various forms of work. Select a category on the right to see some of them.</p>
     </div>
 
-    {{! Gallery }}
-    <div class="col-7 d-flex image_container">
-        <div class="col-4 p-1 image_slider">
-            <div class="image_box"></div>
+    {{! Gallery (Desktop) }}
+    <div class="col-8 d-none d-md-flex image_container pl-100">
+        <div class="col-4 p-0 image_slider">
+            <div class="image_box position-relative" id="university">
+                <div class="position-absolute">University</div>
+            </div>
         </div>
-        <div class="col-4 p-1 image_slider">
-            <div class="image_box"></div>
+        <div class="col-4 p-0 image_slider">
+            <div class="image_box position-relative" id="personal">
+                <div class="position-absolute">Personal</div>
+            </div>
         </div>
-        <div class="col-4 p-1 image_slider">
-            <div class="image_box"></div>
+        <div class="col-4 p-0 image_slider">
+            <div class="image_box position-relative" id="commission">
+                <div class="position-absolute">Commissions</div>
+            </div>
+        </div>
+    </div>
+
+    {{!-- Gallery (Mobile) --}}
+    <div class="col-12 d-flex d-md-none flex-column image_container w-100">
+        <div class="w-100 h-33">
+            <div class="image_box position-relative h-100" id="university">
+                <div class="position-absolute">University</div>
+            </div>
+        </div>
+        <div class="w-100 h-33">
+            <div class="image_box position-relative h-100" id="personal">
+                <div class="position-absolute">Personal</div>
+            </div>
+        </div>
+        <div class="w-100 h-33">
+            <div class="image_box position-relative h-100" id="commission">
+                <div class="position-absolute">Commissions</div>
+            </div>
         </div>
     </div>
 

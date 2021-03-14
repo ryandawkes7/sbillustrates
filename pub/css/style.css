@@ -1118,17 +1118,241 @@
 #header .navbar-backdrop {
   background: linear-gradient(180deg, #FCE7FF 0%, #FBDBFF 100%);
 }
+#header .navbar-backdrop nav {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+#header .navbar-backdrop .navbar-brand {
+  padding: 0 !important;
+}
+#header .navbar-backdrop .navbar-brand img {
+  max-height: 40px;
+  width: auto;
+  display: block;
+}
+@media (min-width: 768px) {
+  #header .navbar-brand {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
 #portfolio-home {
   background: #FFDADA;
   height: fit-content;
 }
-#portfolio-home .description_container h1 {
+#portfolio-home .portfolio_container {
+  flex-direction: column;
+}
+#portfolio-home .portfolio_container .description_container h1 {
   text-transform: uppercase;
   letter-spacing: 0.3rem;
 }
-#portfolio-home .image_container .image_box {
-  height: 500px;
+#portfolio-home .portfolio_container .image_container {
+  overflow-x: hidden;
+  height: 50vh;
+  margin-top: 1.5rem;
+}
+#portfolio-home .portfolio_container .image_container .image_slider {
+  transition: all 0.3s ease;
+}
+#portfolio-home .portfolio_container .image_container .image_box {
+  height: 60vh;
+  background-size: cover;
+  background-position-x: 25%;
+  background-position-y: 33%;
+}
+#portfolio-home .portfolio_container .image_container .image_box div {
+  bottom: 0;
+  left: 0;
+  top: 0;
+  right: 0;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  font-weight: 700;
+  color: white;
+  background: rgba(0, 0, 0, 0.4);
+  transition: all 0.3s ease;
+}
+#portfolio-home .portfolio_container .image_container #university {
+  background-image: url(../img/uni-image.png);
+}
+#portfolio-home .portfolio_container .image_container #personal {
+  background-image: url(../img/personal-image.png);
+}
+#portfolio-home .portfolio_container .image_container #commission {
+  background-image: url(../img/commission-image.png);
+}
+@media (min-width: 768px) {
+  #portfolio-home .portfolio_container {
+    flex-direction: row;
+  }
+  #portfolio-home .portfolio_container .image_container {
+    height: 60vh;
+    margin-top: unset;
+  }
+  #portfolio-home .portfolio_container .image_container .image_box div {
+    font-size: 36px;
+    opacity: 0;
+    background: rgba(0, 0, 0, 0.4);
+  }
+}
+#about {
+  background: #F4FFDD;
+}
+#about .about_container {
+  flex-direction: column;
+}
+#about .about_container .profile_image {
+  border-radius: 0.5rem;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.5);
+}
+@media (min-width: 768px) {
+  #about .about_container {
+    flex-direction: row;
+  }
+}
+#contact {
+  background: #E5FFF5;
+}
+#contact .mobile_contact .social_item {
   background: green;
+  border-radius: 0.5rem;
+}
+#contact .etsy_email_container .etsy_email_box .etsy_email_inner {
+  border: 1px solid green;
+  border-radius: 0.5rem;
+}
+#contact .etsy_email_container .etsy_email_box .etsy_email_inner p {
+  text-align: center;
+}
+#contact .etsy_email_container .etsy_email_box .etsy_email_inner a {
+  height: 52px;
+}
+#contact .etsy_email_container .etsy_email_box .etsy_email_inner .etsy_button {
+  background: #EDC8EA;
+  border-radius: 0.5rem;
+  font-size: 18px;
+  font-weight: 700;
+  color: white;
+}
+#contact .mobile_form {
+  background: #D1FCEB;
+  border-radius: 0.5rem;
+}
+#contact .mobile_form h2 {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+}
+#contact .mobile_form .form-group input, #contact .mobile_form .form-group textarea {
+  background: #EDC8EA;
+  border: none;
+  border-radius: 0.5rem;
+  color: rgba(0, 0, 0, 0.75);
+}
+#contact .mobile_form .form-group input::placeholder, #contact .mobile_form .form-group textarea::placeholder {
+  color: rgba(0, 0, 0, 0.2);
+}
+#contact .mobile_form .submit_btn {
+  border: none;
+  background: green;
+  color: white;
+  border-radius: 0.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+@media (min-width: 768px) {
+  #contact .contact_box {
+    background: #D1FCEB;
+    border-radius: 0.5rem;
+  }
+  #contact .contact_box .logo_image {
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+  }
+  #contact .contact_box .logo_image img {
+    height: 100%;
+    margin: auto;
+  }
+  #contact .contact_box .social_container .social_item {
+    list-style: none;
+  }
+  #contact .contact_box .social_container .social_item a {
+    border-radius: 0.5rem;
+    background: green;
+  }
+  #contact .contact_box .social_container .social_item a img {
+    max-height: 60px;
+  }
+  #contact .contact_box .etsy_container p {
+    font-size: 12px;
+  }
+  #contact .contact_box .etsy_container .etsy_link {
+    background: green;
+    color: white;
+    border-radius: 0.5rem;
+    font-size: 28px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  #contact .contact_box .email_container img {
+    max-height: 60px;
+  }
+  #contact .contact_box .email_container p {
+    font-size: 14px;
+    color: black;
+  }
+  #contact .contact_box .contact_title h1,
+#contact .contact_box .contact_title p {
+    text-align: right;
+  }
+  #contact .contact_box form {
+    max-width: 470px;
+  }
+  #contact .contact_box form label {
+    font-weight: 300;
+    font-size: 14px;
+  }
+  #contact .contact_box form .form-group input,
+#contact .contact_box form .form-group textarea {
+    border: none;
+    background: #EDC8EA;
+    color: rgba(0, 0, 0, 0.7);
+    font-weight: 300;
+    font-size: 16px;
+    border-radius: 0.5rem;
+    transition: all 0.2s ease;
+  }
+  #contact .contact_box form .form-group input:hover, #contact .contact_box form .form-group input:focus,
+#contact .contact_box form .form-group textarea:hover,
+#contact .contact_box form .form-group textarea:focus {
+    background: #d483cf;
+  }
+  #contact .contact_box form .form-group input::placeholder,
+#contact .contact_box form .form-group textarea::placeholder {
+    color: rgba(0, 0, 0, 0.2);
+  }
+  #contact .contact_box form .form-group input {
+    min-height: 32px;
+  }
+  #contact .contact_box form .form-group textarea {
+    min-height: 70px;
+    height: 100px;
+    max-height: 130px;
+    max-width: 100%;
+    min-width: 100%;
+  }
+  #contact .contact_box form .submit_btn {
+    border-radius: 0.5rem;
+    background: green;
+    border: none;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
 }
 #footer {
   background: #C38FC9;
@@ -1136,16 +1360,63 @@
 body {
   min-height: 100vh;
   width: 100vw;
+  max-width: 100vw;
+  overflow-x: hidden;
 }
 
 h1 {
   font-weight: 700;
-  font-size: 48px;
+  font-size: 42px;
+  text-transform: uppercase;
 }
 
 p {
   font-weight: 400;
-  font-size: 18px;
+  font-size: 16px;
+}
+
+a, input, button {
+  text-decoration: none !important;
+}
+
+li {
+  list-style: none !important;
+}
+
+.h-33 {
+  height: 33.33334%;
+}
+
+@media (min-width: 768px) {
+  h1 {
+    font-size: 48px;
+  }
+
+  .px-50 {
+    padding-left: 50px !important;
+    padding-right: 50px !important;
+  }
+
+  .pl-50 {
+    padding-left: 50px !important;
+  }
+
+  .pr-50 {
+    padding-right: 50px !important;
+  }
+
+  .px-100 {
+    padding-left: 100px !important;
+    padding-right: 100px !important;
+  }
+
+  .pl-100 {
+    padding-left: 100px !important;
+  }
+
+  .pr-100 {
+    padding-right: 100px !important;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

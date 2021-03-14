@@ -2,23 +2,72 @@
   background: $salmon;
   height: fit-content;
 
-  .description_container {
-    h1 {
-      text-transform: uppercase;
-      letter-spacing: 0.3rem;
+  .portfolio_container {
+    flex-direction: column;
+    .description_container {
+      h1 {
+        text-transform: uppercase;
+        letter-spacing: 0.3rem;
+      }
     }
-  }
 
-  .image_container {
-    .image_box {
-      height: 500px;
-      background: green;
+    .image_container {
+      overflow-x: hidden;
+      height: 50vh;
+      margin-top: 1.5rem;
+      .image_slider {
+        transition: all 0.3s ease;
+      }
+      .image_box {
+        height: 60vh;
+        background-size: cover;
+        background-position-x: 25%;
+        background-position-y: 33%;
+        div {
+          bottom: 0;
+          left: 0;
+          top: 0;
+          right: 0;
+          text-align: center;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-size: 30px;
+          font-weight: 700;
+          color: white;
+          background: rgba(0, 0, 0, 0.4);
+          transition: all 0.3s ease;
+        }
+      }
+      #university {
+        background-image: url(../img/uni-image.png);
+      }
+      #personal {
+        background-image: url(../img/personal-image.png);
+      }
+      #commission {
+        background-image: url(../img/commission-image.png);
+      }
     }
   }
 
   @include media-breakpoint-up(sm) {
   }
   @include media-breakpoint-up(md) {
+    .portfolio_container {
+      flex-direction: row;
+      .image_container {
+        height: 60vh;
+        margin-top: unset;
+        .image_box {
+          div {
+            font-size: 36px;
+            opacity: 0;
+            background: rgba(0, 0, 0, 0.4);
+          }
+        }
+      }
+    }
   }
   @include media-breakpoint-up(lg) {
   }
