@@ -1,4 +1,5 @@
 #contact {
+  padding: 1.5rem 0;
   background: $light_green;
 
   .mobile_contact {
@@ -60,6 +61,8 @@
   @include media-breakpoint-up(sm) {
   }
   @include media-breakpoint-up(md) {
+    padding: 3rem 0;
+    align-items: center;
     .contact_box {
       background: $dark_green;
       border-radius: 0.5rem;

@@ -2,9 +2,48 @@
 
     background: $purple;
 
+    .navbar {
+      display: flex;
+      flex-direction: column-reverse;
+
+      .navbar-brand {
+        margin-bottom: 1.5rem;
+        p {
+          color: rgba(0,0,0,0.3);
+        }
+      }
+
+      .page_links {
+        flex-direction: column;
+        width: 100%;
+        margin-bottom: 1.5rem;
+        li {
+          margin-left: 1.5rem;
+        }
+        a {
+          color: #fff;
+        }
+      }
+    }
+
   @include media-breakpoint-up(sm) {
   }
   @include media-breakpoint-up(md) {
+    .navbar {
+      flex-direction: row;
+
+      .navbar-brand {
+        margin-bottom: unset;
+      }
+      .page_links {
+        width: unset;
+        flex-direction: row;
+        margin-bottom: 0;
+        li {
+          margin: 0 3rem;
+        }
+      }
+    }
   }
   @include media-breakpoint-up(lg) {
   }

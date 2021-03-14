@@ -1,4 +1,5 @@
 #portfolio-home {
+  padding: 1.5rem 0;
   background: $salmon;
   height: fit-content;
 
@@ -54,6 +55,7 @@
   @include media-breakpoint-up(sm) {
   }
   @include media-breakpoint-up(md) {
+    padding: 3rem 0;
     .portfolio_container {
       flex-direction: row;
       .image_container {

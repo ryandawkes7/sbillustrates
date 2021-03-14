@@ -1122,6 +1122,9 @@
   padding-left: 0 !important;
   padding-right: 0 !important;
 }
+#header .navbar-backdrop .navbar-toggler {
+  border: none;
+}
 #header .navbar-backdrop .navbar-brand {
   padding: 0 !important;
 }
@@ -1137,6 +1140,7 @@
   }
 }
 #portfolio-home {
+  padding: 1.5rem 0;
   background: #FFDADA;
   height: fit-content;
 }
@@ -1186,6 +1190,9 @@
   background-image: url(../img/commission-image.png);
 }
 @media (min-width: 768px) {
+  #portfolio-home {
+    padding: 3rem 0;
+  }
   #portfolio-home .portfolio_container {
     flex-direction: row;
   }
@@ -1200,6 +1207,7 @@
   }
 }
 #about {
+  padding: 1.5rem 0;
   background: #F4FFDD;
 }
 #about .about_container {
@@ -1210,11 +1218,15 @@
   box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.5);
 }
 @media (min-width: 768px) {
+  #about {
+    padding: 3rem 0;
+  }
   #about .about_container {
     flex-direction: row;
   }
 }
 #contact {
+  padding: 1.5rem 0;
   background: #E5FFF5;
 }
 #contact .mobile_contact .social_item {
@@ -1263,6 +1275,10 @@
   font-weight: 700;
 }
 @media (min-width: 768px) {
+  #contact {
+    padding: 3rem 0;
+    align-items: center;
+  }
   #contact .contact_box {
     background: #D1FCEB;
     border-radius: 0.5rem;
@@ -1356,6 +1372,43 @@
 }
 #footer {
   background: #C38FC9;
+}
+#footer .navbar {
+  display: flex;
+  flex-direction: column-reverse;
+}
+#footer .navbar .navbar-brand {
+  margin-bottom: 1.5rem;
+}
+#footer .navbar .navbar-brand p {
+  color: rgba(0, 0, 0, 0.3);
+}
+#footer .navbar .page_links {
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 1.5rem;
+}
+#footer .navbar .page_links li {
+  margin-left: 1.5rem;
+}
+#footer .navbar .page_links a {
+  color: #fff;
+}
+@media (min-width: 768px) {
+  #footer .navbar {
+    flex-direction: row;
+  }
+  #footer .navbar .navbar-brand {
+    margin-bottom: unset;
+  }
+  #footer .navbar .page_links {
+    width: unset;
+    flex-direction: row;
+    margin-bottom: 0;
+  }
+  #footer .navbar .page_links li {
+    margin: 0 3rem;
+  }
 }
 body {
   min-height: 100vh;

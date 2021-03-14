@@ -1,4 +1,5 @@
 #about {
+  padding: 1.5rem 0;
   background: $yellow;
 
   .about_container {
@@ -16,6 +17,7 @@
   @include media-breakpoint-up(sm) {
   }
   @include media-breakpoint-up(md) {
+    padding: 3rem 0;
     .about_container {
       flex-direction: row;
     }
