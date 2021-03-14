@@ -1,0 +1,101 @@
+[
+    {
+        "id": 1,
+        "image": "/img/art/abstract-art.JPG",
+        "title": "Rosa Parks",
+        "category": "Commission",
+        "description": "Lorem ipsum",
+        "style": "Digital",
+        "etsy": null
+    },
+    {
+        "id": 2,
+        "image": "/img/art/abstract-wilton.JPG",
+        "title": "Wilton Care Home",
+        "category": "Commission",
+        "description": "Lorem ipsum",
+        "style": "Digital",
+        "etsy": null
+    },
+    {
+        "id": 3,
+        "image": "/img/art/baby-sketch.JPG",
+        "title": "Baby Portrait",
+        "category": "Commission",
+        "description": "Lorem ipsum",
+        "style": "Pencil",
+        "etsy": null
+    },
+    {
+        "id": 4,
+        "image": "/img/art/back-to-the-future.JPG",
+        "title": "Back to the Future",
+        "category": "Commission",
+        "description": "Lorem ipsum",
+        "style": "Digital",
+        "etsy": null
+    },
+    {
+        "id": 5,
+        "image": "/img/art/family-pencil.JPG",
+        "title": "Family Portrait",
+        "category": "Commission",
+        "description": "Lorem ipsum",
+        "style": "Pencil",
+        "etsy": null
+    },
+    {
+        "id": 6,
+        "image": "/img/art/food-stereotype.JPG",
+        "title": "Food Stereotyping",
+        "category": "University",
+        "description": "Lorem ipsum",
+        "style": "Digital",
+        "etsy": null
+    },
+    {
+        "id": 7,
+        "image": "/img/art/harry-styles.JPG",
+        "title": "Harry Styles Portrait",
+        "category": "Personal",
+        "description": "Lorem ipsum",
+        "style": "Digital",
+        "etsy": null
+    },
+    {
+        "id": 8,
+        "image": "/img/art/taunton-digital.JPG",
+        "title": "Taunton Town Centre",
+        "category": "Commission",
+        "description": "Lorem ipsum",
+        "style": "Digital",
+        "etsy": null
+    },
+    {
+        "id": 9,
+        "image": "/img/art/travis-scott.JPG",
+        "title": "Travis Scott Portrait",
+        "category": "Commission",
+        "description": "Lorem ipsum",
+        "style": "Digital",
+        "etsy": null
+    },
+    {
+        "id": 10,
+        "image": "/img/art/tyler-blue.JPG",
+        "title": "Tyler the Creator - Blue",
+        "category": "Personal",
+        "description": "Lorem ipsum",
+        "style": "Digital",
+        "etsy": null
+    },
+    {
+        "id": 11,
+        "image": "/img/art/tyler-brown.JPG",
+        "title": "Tyler the Creator - Brown",
+        "category": "University",
+        "description": "Lorem ipsum",
+        "style": "Digital",
+        "etsy": null
+    }
+]

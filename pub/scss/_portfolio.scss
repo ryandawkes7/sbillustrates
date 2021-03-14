@@ -1,0 +1,91 @@
+#portfolio-container {
+    background: $salmon;
+    min-height: 100vh;
+
+    .art_box {
+      min-height: 330px;
+      padding: 1rem 0.5rem;
+      .art_inner {
+        border-radius: 1rem;
+        height: fit-content;
+        min-height: 100%;
+        overflow: hidden;
+        background: #FFE9E9;
+        .image_container {
+          padding: 1rem 0.25rem;
+          img {
+            max-height: 200px;
+            height: auto;
+            display: block;
+            max-width: 100%;
+          }
+        }
+
+        footer {
+          background-color: $card_footer;
+          min-height: 75px;
+          height: fit-content;
+          padding: 0.5rem;
+          h3 {
+            font-size: 4vw;
+            font-weight: 700;
+          }
+          small {
+            font-size: 3vw;
+          }
+          span {
+            font-size: 0.5vw;
+            font-weight: 300;
+            color: rgba(0,0,0,0.5)
+          }
+        }
+      }
+    }
+
+    @include media-breakpoint-up(sm) {
+      padding-left: 25px;
+      padding-right: 25px;
+    }
+    @include media-breakpoint-up(md) {
+      padding-left: 50px;
+      padding-right: 50px;
+      .art_box {
+        padding: 1rem !important;
+      }
+      .image_container {
+        padding: 1rem !important;
+      }
+      footer {
+        padding: 1rem !important;
+        h3 {
+          font-size: 2vw !important;
+        }
+        small {
+          font-size: 1.5vw !important;
+        }
+        span {
+          font-size: 1vw !important;
+        }
+      }
+    }
+    @include media-breakpoint-up(lg) {
+      padding-left: 75px !important;
+      padding-right: 75px !important;
+      footer {
+        h3 {
+          font-size: 0.9vw !important;
+        }
+        small {
+          font-size: 0.7vw !important;
+        }
+        span {
+          font-size: 0.5vw !important;
+        }
+      }
+    }
+    @include media-breakpoint-up(xl) {
+      padding-left: 100px !important;
+      padding-right: 100px !important;
+    }
+  }
+  

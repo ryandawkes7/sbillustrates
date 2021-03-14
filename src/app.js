@@ -1,6 +1,7 @@
 const path = require('path');
 const express = require('express');
 const hbs = require('hbs');
+const fs = require('fs');
 
 // Setup express and port
 const app = express();
@@ -23,10 +24,25 @@ hbs.registerPartials(partialsGlobal);
 hbs.registerPartials(partialsHome);
 hbs.registerPartials(partialsPortfolio);
 
+// Home
 app.get('', (req, res) => {
-    res.render('index', {
-        title: 'Portfolio',
-        name: 'SB Illustrates'
+    res.render('index');
+})
+
+// Portfolio
+app.get('/portfolio', (req, res) => {
+    res.render('portfolio');
+})
+
+// API endpoint for portfolio JSON data
+app.get('/data', (req, res) => {
+    // Setup path to JSON file
+    const dataPath = path.join(__filename, '../data.json');
+    fs.readFile(dataPath, 'utf8', (err, data) => {
+        if (err) {
+            throw err;
+        }
+        res.send(JSON.parse(data))
     })
 })
 
