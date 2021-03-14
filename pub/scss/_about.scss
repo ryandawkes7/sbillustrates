@@ -1,0 +1,27 @@
+#about {
+  background: $yellow;
+
+  .about_container {
+    flex-direction: column;
+
+    .description_container {
+    }
+
+    .profile_image {
+      border-radius: 0.5rem;
+      box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.5);
+    }
+  }
+
+  @include media-breakpoint-up(sm) {
+  }
+  @include media-breakpoint-up(md) {
+    .about_container {
+      flex-direction: row;
+    }
+  }
+  @include media-breakpoint-up(lg) {
+  }
+  @include media-breakpoint-up(xl) {
+  }
+}

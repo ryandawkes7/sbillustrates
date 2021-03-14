@@ -1,0 +1,172 @@
+#contact {
+  background: $light_green;
+
+  .mobile_contact {
+    .social_item {
+        background: green;
+        border-radius: 0.5rem;
+    }
+  }
+
+  .etsy_email_container {
+      .etsy_email_box {
+        .etsy_email_inner {
+            border: 1px solid green;
+            border-radius: 0.5rem;
+            p {
+                text-align: center;
+            }
+            a {
+                height: 52px;
+            }
+            .etsy_button {
+                background: $pink;
+                border-radius: 0.5rem;
+                font-size: 18px;
+                font-weight: 700;
+                color: white;
+            }
+        }
+      }
+  }
+
+  .mobile_form {
+      background: $dark_green;
+      border-radius: 0.5rem;
+      h2{ 
+          border-bottom: 1px solid rgba(0,0,0,0.4);
+      }
+      .form-group {
+          input, textarea {
+              background: $pink;
+              border: none;
+              border-radius: 0.5rem;
+              color: rgba(0,0,0,0.75);
+              &::placeholder {
+                color: rgba(0, 0, 0, 0.2)
+              }
+          }
+      }
+      .submit_btn {
+          border: none;
+          background: green;
+          color: white;
+          border-radius: 0.5rem;
+          text-transform: uppercase;
+          font-weight: 700;
+      }
+  }
+
+  @include media-breakpoint-up(sm) {
+  }
+  @include media-breakpoint-up(md) {
+    .contact_box {
+      background: $dark_green;
+      border-radius: 0.5rem;
+
+      .logo_image {
+        width: 200px;
+        height: 200px;
+        border-radius: 100%;
+        img {
+          height: 100%;
+          margin: auto;
+        }
+      }
+
+      .social_container {
+        .social_item {
+          list-style: none;
+          a {
+            border-radius: 0.5rem;
+            background: green;
+            img {
+              max-height: 60px;
+            }
+          }
+        }
+      }
+
+      .etsy_container {
+        p {
+          font-size: 12px;
+        }
+        .etsy_link {
+          background: green;
+          color: white;
+          border-radius: 0.5rem;
+          font-size: 28px;
+          font-weight: 700;
+          text-transform: uppercase;
+        }
+      }
+
+      .email_container {
+        img {
+          max-height: 60px;
+        }
+        p {
+          font-size: 14px;
+          color: black;
+        }
+      }
+
+      .contact_title {
+        h1,
+        p {
+          text-align: right;
+        }
+      }
+
+      form {
+        max-width: 470px;
+        label {
+          font-weight: 300;
+          font-size: 14px;
+        }
+        .form-group {
+          input,
+          textarea {
+            border: none;
+            background: $pink;
+            color: rgba(0, 0, 0, 0.7);
+            font-weight: 300;
+            font-size: 16px;
+            border-radius: 0.5rem;
+            transition: all 0.2s ease;
+            &:hover,
+            &:focus {
+              background: $dark_pink;
+            }
+            &::placeholder {
+              color: rgba(0, 0, 0, 0.2);
+            }
+          }
+          input {
+            min-height: 32px;
+          }
+          textarea {
+            min-height: 70px;
+            height: 100px;
+            max-height: 130px;
+            max-width: 100%;
+            min-width: 100%;
+          }
+        }
+        .submit_btn {
+          border-radius: 0.5rem;
+          background: green;
+          border: none;
+          color: white;
+          font-size: 18px;
+          font-weight: 500;
+          text-transform: uppercase;
+        }
+      }
+    }
+  }
+  @include media-breakpoint-up(lg) {
+  }
+  @include media-breakpoint-up(xl) {
+  }
+}
