@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "npx webpack --mode development",
-    "dev": "npm run watch:js && npm run watch:sass",
+    "dev": "npm run watch:js & npm run watch:sass",
     "start": "node src/app.js",
     "watch:js": "nodemon src/app.js -e hbs,js",
     "watch:sass": "sass --watch pub/scss/main.scss:pub/css/style.css",
