@@ -9,7 +9,8 @@
     "start": "node src/app.js",
     "watch": "npx npm-run-all watch:*",
     "watch:js": "nodemon src/app.js -e hbs,js",
-    "watch:sass": "sass --watch pub/scss/main.scss:pub/css/style.css"
+    "watch:sass": "sass --watch pub/scss/main.scss:pub/css/style.css",
+    "deploy": "git push heroku main"
   },
   "author": "Ryan Dawkes",
   "license": "ISC",
