@@ -1504,6 +1504,11 @@
     background: rgba(0, 0, 0, 0.4);
   }
 }
+#subheader {
+  background-color: #F4FFDD;
+  min-height: 72px;
+}
+
 body {
   min-height: 100vh;
   width: 100vw;
