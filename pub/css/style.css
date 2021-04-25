@@ -1352,11 +1352,17 @@
   padding: 1rem 0.5rem;
 }
 #portfolio-container .art_box .art_inner {
+  max-width: 270px;
   border-radius: 1rem;
   height: fit-content;
   min-height: 100%;
   overflow: hidden;
   background: #FFE9E9;
+  border: none;
+  transition: box-shadow 0.2s ease;
+}
+#portfolio-container .art_box .art_inner:hover {
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.23), 0 5px 10px 0 rgba(0, 0, 0, 0.29);
 }
 #portfolio-container .art_box .art_inner .image_container {
   padding: 1rem 0.25rem;
