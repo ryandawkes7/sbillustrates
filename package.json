@@ -10,7 +10,7 @@
     "watch:sass": "sass --watch pub/scss/main.scss:pub/css/style.css",
     "watch:react": "cd client && npm start",
     "dev": "concurrently --kill-others-on-fail \"npm run watch:js\" \"npm run watch:sass\" \"npm run watch:react\"",
-    "heroku-postbuild": "cd client && npm install && npm install --only=dev --no-shrinkwrap && npm run build",
+    "heroku-postbuild": "cd ./client && npm install && npm install --only=dev --no-shrinkwrap && npm run build",
     "deploy": "git push heroku main"
   },
   "author": "Ryan Dawkes",
