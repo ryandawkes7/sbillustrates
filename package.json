@@ -5,15 +5,18 @@
   "main": "index.js",
   "scripts": {
     "build": "npx webpack --mode development",
-    "dev": "npm run watch:js & npm run watch:sass",
     "start": "node src/app.js",
     "watch:js": "nodemon src/app.js -e hbs,js",
     "watch:sass": "sass --watch pub/scss/main.scss:pub/css/style.css",
+    "watch:react": "cd client && npm start",
+    "dev": "concurrently --kill-others-on-fail \"npm run watch:js\" \"npm run watch:sass\" \"npm run watch:react\"",
+    "heroku-postbuild": "cd client && npm install && npm install --only=dev --no-shrinkwrap && npm run build",
     "deploy": "git push heroku main"
   },
   "author": "Ryan Dawkes",
   "license": "ISC",
   "dependencies": {
+    "body-parser": "^1.19.0",
     "bootstrap": "^4.6.0",
     "express": "^4.17.1",
     "hbs": "^4.1.1",

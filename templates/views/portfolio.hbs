@@ -12,7 +12,17 @@
 
             {{!-- Art Items --}}
             <div class="col-12 d-flex flex-wrap my-5 mx-0" id="art_container">
-                
+                <script>
+                    fetch("/data").then((res) => {
+                        res.json().then((data) => {
+                            <script>
+                                {{#.}}
+                                <li>hello</li>
+                                {{/.}}
+                            </script>
+                        });
+                    });
+                </script>
             </div>
 
             {{>modal}}

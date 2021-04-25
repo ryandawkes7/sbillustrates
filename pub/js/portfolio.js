@@ -38,24 +38,23 @@ const filterChange = (category, style) => {
   // API call
   fetch("/data").then((res) => {
     res.json().then((data) => {
-      
       // Display all on load
-      if (category.val() == 'all') {
+      if (category.val() == "all") {
         // data.map(item => fetchData(item));
-        data.map(item => {
+        data.map((item) => {
           artItems.push(item);
-          fetchData(item, artItems)
-        })
+          fetchData(item, artItems);
+        });
       }
       // console.log('artItems')
       // console.log(artItems)
 
       // On filter change
-      category.on('change', e => {
+      category.on("change", (e) => {
         const targetValue = e.target.value;
-        
+
         // Remove items and empty array
-        $('.art_box').remove();
+        $(".art_box").remove();
         artItems.splice(0, artItems.length);
 
         // If filter has different value, show specified category
@@ -63,35 +62,33 @@ const filterChange = (category, style) => {
           if (targetValue == data[i].category.toLowerCase()) {
             artItems.push(data[i]);
             fetchData(data[i], artItems);
-          } else if (targetValue == 'all') {
-            artItems.push(data[i])
+          } else if (targetValue == "all") {
+            artItems.push(data[i]);
             fetchData(data[i], artItems);
           }
         }
-      })
+      });
     });
   });
 };
 
 // Open popup
 const openModal = () => {
-  const modal = document.getElementById('art_modal');
-  const artItems = document.getElementsByClassName('art_inner');
-    
-  if (artItems != "") {
+  const modal = document.getElementById("art_modal");
+  const artItems = document.getElementsByClassName("art_inner");
 
+  if (artItems != "") {
   } else {
     setTimeout(openModal, 100);
   }
   // When user clicks something, need to see what they have clicked - what is the ID of the item they have clicked
-
-}
+};
 
 $(document).ready(() => {
   const category = $("#category_selection");
   const style = $("#style_selection");
   filterChange(category);
-  filterChange(style)
+  filterChange(style);
 
   openModal();
 });
